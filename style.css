@@ -1,0 +1,171 @@
+/* Reset styles and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e8f6f3; /* Light teal background */
+  color: #4b4a4a;
+  animation: fadeIn 2s ease-in-out; /* Page fade-in animation */
+}
+
+/* Header Styles */
+header {
+  background: #3a506b; /* Darker blue-gray */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  animation: slideDown 1.5s ease; /* Slide down animation */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.center-image {
+  max-width: 20%;
+  height: auto;
+  border-radius:  50% / 30%; /* Rounded profile image */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Image shadow */
+  transition: transform 0.5s ease; /* Smooth image scaling */
+}
+
+.center-image:hover {
+  transform: scale(1.1); /* Slight zoom-in on hover */
+}
+
+/* Container for sections */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  color:#4b4a4a;
+  background-color: whitesmoke; /* Light background for section */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 0;
+  animation: fadeInUp 1s ease;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #3a506b; /* Darker blue-gray for headings */
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3a506b; /* Underline for headings */
+  padding-bottom: 10px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+/* Project Styles */
+#projects .project {
+  margin-bottom: 20px;
+}
+
+#projects .project h3 {
+  font-size: 1.5rem;
+  color: #217cd7; /* Lighter teal color for project titles */
+}
+
+#projects .project a {
+  color: #3a506b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#projects .project a:hover {
+  color: #217cd7; /* Change color on hover */
+}
+
+/* Footer Styles */
+footer {
+  background: #3a506b;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+/* Button Hover Effects */
+.cta-button:hover {
+  transform: scale(1.1);
+  background-color: #5bc0be;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+
+
+  
+  
+
+  

@@ -1,0 +1,91 @@
+body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Soft gradient background */
+    animation: backgroundAnimation 10s infinite; /* Background color animation */
+}
+
+/* Background color animation */
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(to right, #4facfe, #00f2fe); }
+    50% { background: linear-gradient(to right, #ff6a00, #ee0979); }
+    100% { background: linear-gradient(to right, #4facfe, #00f2fe); }
+}
+
+.cover {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-end; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background-image: url('welcome.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    color: white; /* Text color */
+    text-align: top padding; /* Center text */
+    animation: fadeIn 2s ease-in; /* Fade-in animation */
+}
+
+/* Fade-in animation for the cover section */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cover h1 {
+    font-size: 3em; /* Font size for your name */
+    margin: 0; /* No margin */
+    animation: slideInDown 1.5s ease-out; /* Slide-in animation */
+}
+
+/* Slide-in animation for the heading */
+@keyframes slideInDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.cover p {
+    margin: 10px 0; /* Add margin for paragraph spacing */
+    animation: fadeInUp 2s ease-in; /* Fade-in-up animation */
+}
+
+/* Fade-in-up animation for paragraph */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cta-button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+    animation: bounceIn 1.5s ease-out 1; /* Button bounce-in animation */
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Bounce-in animation for the button */
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+
+
+
