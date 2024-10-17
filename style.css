@@ -13,6 +13,32 @@ body {
   color: #4b4a4a;
   animation: fadeIn 2s ease-in-out; /* Page fade-in animation */
 }
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-end; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  width: 100%;
+  height: 95vh; /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  background-image: url('welcome.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  color: white; /* Text color */
+  text-align: top padding; /* Center text */
+  animation: fadeIn 2s ease-in; /* Fade-in animation */
+}
+.cover h1 {
+  font-size: 3em; /* Font size for your name */
+  margin: 0; /* No margin */
+  animation: slideInDown 1.5s ease-out; /* Slide-in animation */
+}
+
+.cover p {
+  margin: 10px 0; /* Add margin for paragraph spacing */
+  animation: fadeInUp 2s ease-in; /* Fade-in-up animation */
+}
 
 /* Header Styles */
 header {
